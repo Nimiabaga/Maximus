@@ -2,7 +2,7 @@
 :root{
   /* Maximus gold v2 */
   --gold-bright: #f7db4b;  /* lighter shine */
-  --gold-mid:    #e8c131;  /* main (your new color) */
+  --gold-mid:    #e8c131;  /* main gold */
   --gold-deep:   #8f6f05;  /* deeper shadow */
   --gold-solid:  #e8c131;  /* solid fallback */
 }
@@ -18,54 +18,54 @@ body {
 }
 
 /* === Header === */
-header {
-  text-align: center;
-  padding: 20px;
-}
+header { text-align: center; padding: 20px; }
 
-/* Bigger logo; no borders anywhere, let the image shine */
+/* ↓ makes the ring look slimmer without editing the image */
 .logo {
-  width: 260px;
+  width: 235px;            /* was 260px */
   max-width: 95%;
   height: auto;
   margin-bottom: 10px;
   object-fit: contain;
 }
 
-/* Keep for pages that still use headings */
-.hero-title, h1 {
-  font-size: 2rem;
-  color: var(--gold-solid);
-  margin: 0;
-}
-
-.slogan {
-  font-style: italic;
-  color: #aaa;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-}
+.hero-title, h1 { font-size: 2rem; color: var(--gold-solid); margin: 0; }
+.slogan { font-style: italic; color: #aaa; font-size: 0.9rem; margin-top: 0.5rem; }
 
 /* === Menu Banner === */
+/* ↑ bigger block + bigger text only */
 .menu-banner {
   background-color: #0f0f0f;
   text-align: center;
-  padding: 0.8rem 0;
-  font-size: 1.1rem;
+  padding: 1rem 0;         /* was 0.8rem */
+  font-size: 1.25rem;      /* was 1.1rem */
   font-weight: 800;
   margin: 0.8rem 0;
   border-top: 1px solid var(--gold-deep);
   border-bottom: 1px solid var(--gold-deep);
 }
 
-/* Gold gradient fill for the banner title */
+/* gold gradient title */
 .menu-banner h2{
   margin: 0;
   letter-spacing: 0.06em;
   background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold-mid) 55%, var(--gold-deep) 100%);
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
+}
+
+/* === Featured Meals (no HTML change needed)
+   target the h2 that comes right AFTER the .menu-banner */
+.menu-banner + h2{
+  text-align:center;
+  font-size: 1.35rem !important;   /* a bit larger */
+  margin: .6rem 0 0;
+  letter-spacing: .04em;
+  background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold-mid) 55%, var(--gold-deep) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;   /* override inline color */
 }
 
 /* === Grid Layout === */
@@ -87,7 +87,6 @@ header {
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-
 .food-card:hover { transform: scale(1.03); }
 
 .food-card img {
@@ -99,77 +98,65 @@ header {
 }
 
 .food-info { padding: 0.3rem; line-height: 1.1; }
+.food-info h4 { color: #fff; font-size: 0.8rem; margin: 0.2rem 0; }
 
-.food-info h4 {
-  color: #fff;
-  font-size: 0.8rem;
-  margin: 0.2rem 0;
-}
-
-/* Price text uses the same gold gradient feel */
+/* gold gradient price */
 .food-info p {
   font-weight: 800;
   font-size: 1.3rem;
   margin: 0;
   background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold-mid) 55%, var(--gold-deep) 100%);
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
-/* === Meal Captions === */
+/* === Meal Captions / Tray Note === */
 .meal-caption {
-  text-align: center;
-  font-size: 0.95rem;
-  color: #ddd;
-  margin: 1.5rem auto 2rem;
-  padding: 1rem;
-  max-width: 90%;
-  line-height: 1.5;
-  background-color: #111;
-  border: 1px solid #333;
-  border-radius: 10px;
+  text-align: center; font-size: 0.95rem; color: #ddd;
+  margin: 1.5rem auto 2rem; padding: 1rem; max-width: 90%;
+  line-height: 1.5; background-color: #111; border: 1px solid #333; border-radius: 10px;
 }
-
-/* === Tray Note === */
 .tray-note {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #aaa;
-  margin: 2rem auto 5rem;
-  padding: 1rem;
-  max-width: 90%;
-  background-color: #111;
-  border-radius: 10px;
-  border: 1px solid #333;
-  line-height: 1.4;
+  text-align: center; font-size: 0.9rem; color: #aaa;
+  margin: 2rem auto 5rem; padding: 1rem; max-width: 90%;
+  background-color: #111; border-radius: 10px; border: 1px solid #333; line-height: 1.4;
 }
 
 /* === Bottom Navigation === */
+/* keep gold always; add subtle glow only while pressing */
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 0; right: 0;
   background: #111;
   border-top: 1px solid #333;
-  display: flex;
-  justify-content: space-around;
+  display: flex; justify-content: space-around;
   padding: 0.5rem 0;
   z-index: 1000;
 }
 
-.bottom-nav a {
-  color: var(--gold-solid);
+.bottom-nav a,
+.bottom-nav a:visited,
+.bottom-nav a:focus,
+.bottom-nav a:active{
+  color: var(--gold-solid);        /* never turns white */
   font-weight: 700;
   text-decoration: none;
   font-size: 22px;
   padding: 0.6rem;
 }
 
-.bottom-nav a.active {
-  color: #fff;
+.bottom-nav a.active{
+  color: var(--gold-solid);        /* keep gold when active */
   border-bottom: 1px solid var(--gold-deep);
+}
+
+/* tap glow */
+.bottom-nav a:active{
+  box-shadow:
+    inset 0 -2px 0 var(--gold-mid),
+    0 0 8px rgba(232, 193, 49, 0.55);
 }
 
 /* === Responsive === */
@@ -192,38 +179,17 @@ header {
 
 /* === Contact page elements === */
 .contact-container {
-  max-width: 600px;
-  margin: 2rem auto 5rem;
-  padding: 2rem;
-  background-color: #111;
-  border: 1px solid #333;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  max-width: 600px; margin: 2rem auto 5rem; padding: 2rem;
+  background-color: #111; border: 1px solid #333; border-radius: 10px;
+  text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
-
-.contact-container h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+.contact-container h2{
+  margin-bottom: 1.5rem; font-size: 1.5rem;
   background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold-mid) 55%, var(--gold-deep) 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
 }
-
-.contact-item {
-  margin: 1.5rem 0;
-  font-size: 1.05rem;
-  color: #ccc;
-  line-height: 1.6;
+.contact-item{ margin: 1.5rem 0; font-size: 1.05rem; color:#ccc; line-height:1.6; }
+.contact-item span, .contact-item a{
+  color: var(--gold-solid); text-decoration: none; display:block; margin: .3rem 0;
 }
-
-.contact-item span,
-.contact-item a {
-  color: var(--gold-solid);
-  text-decoration: none;
-  display: block;
-  margin: 0.3rem 0;
-}
-
-.contact-item a:hover { text-decoration: underline; }
+.contact-item a:hover{ text-decoration: underline; }
