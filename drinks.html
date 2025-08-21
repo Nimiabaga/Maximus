@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <style>
-    /* Drinks page-only tweaks */
+    /* Drinks page-only tweaks (unchanged) */
     .menu-toggle{
       display:flex;justify-content:center;gap:.6rem;flex-wrap:wrap;
       margin:1rem auto 1.2rem;max-width:980px;padding:0 .6rem;
@@ -22,7 +22,6 @@
     .menu-toggle a:hover{ box-shadow:0 0 10px rgba(232,193,49,.22); }
     .menu-toggle a:active{ transform:scale(.98); box-shadow:inset 0 -2px 0 var(--gold-mid),0 0 10px rgba(232,193,49,.45); }
 
-    /* optional: make preview cards say “From ₦” instead of a fixed price */
     .food-info p small{ font-weight:600; opacity:.9; }
   </style>
 </head>
@@ -33,7 +32,7 @@
 
   <div class="menu-banner"><h2>DRINKS MENU</h2></div>
 
-  <!-- Category Buttons (local file links) -->
+  <!-- Category Buttons -->
   <div class="menu-toggle">
     <a href="./mocktails.html">Mocktails</a>
     <a href="./cocktails.html">Cocktails</a>
@@ -43,56 +42,63 @@
     <a href="./wines.html">Wines</a>
     <a href="./champagne.html">Champagne</a>
     <a href="./beer.html">Beer</a>
-    <a href="./liquor.html">Liquor</a>
+    <a href="./liqueur.html">Liqueur</a>
     <a href="./gin-rum.html">Gin &amp; Rum</a>
     <a href="./cognac-tequila.html">Cognac &amp; Tequila</a>
     <a href="./shots.html">Shots</a>
   </div>
 
-  <!-- Preview Grid (swap images/text as you add real items) -->
+  <!-- Preview Grid (Maximus 4-feature) -->
   <main>
     <div class="food-grid">
+      <!-- Maximus Electric Iced Tea -->
       <div class="food-card">
-        <img src="images/cocktail.jpg" alt="Signature Cocktail" />
+        <img src="images/maximus-electric-iced-tea.jpg" alt="Maximus Electric Iced Tea" />
         <div class="food-info">
-          <h4>Signature Cocktail</h4>
-          <p><small>From</small> ₦5,000</p>
+          <h4>Maximus Electric Iced Tea</h4>
+          <p>₦7,000</p>
         </div>
       </div>
 
+      <!-- Martell VSSD -->
       <div class="food-card">
-        <img src="images/beer.jpg" alt="Premium Lager" />
+        <img src="images/martell-vssd.jpg" alt="Martell VSSD" />
         <div class="food-info">
-          <h4>Premium Lager</h4>
-          <p><small>From</small> ₦2,500</p>
+          <h4>Martell VSSD</h4>
+          <p>₦100,000</p>
         </div>
       </div>
 
+      <!-- Glenlivet Founder’s Reserve -->
       <div class="food-card">
-        <img src="images/whiskey.jpg" alt="Whiskey (Singles)" />
+        <img src="images/glenlivet-founders-reserve.jpg" alt="Glenlivet Founder’s Reserve" />
         <div class="food-info">
-          <h4>Whiskey (Singles)</h4>
-          <p><small>From</small> ₦3,500</p>
+          <h4>Glenlivet Founder’s Reserve</h4>
+          <p>₦100,000</p>
         </div>
       </div>
 
+      <!-- Drostdy Hof -->
       <div class="food-card">
-        <img src="images/mocktail.jpg" alt="House Mocktail" />
+        <img src="images/drostdy-hof.jpg" alt="Drostdy Hof" />
         <div class="food-info">
-          <h4>House Mocktail</h4>
-          <p><small>From</small> ₦3,000</p>
+          <h4>Drostdy Hof</h4>
+          <p>₦20,000</p>
         </div>
       </div>
     </div>
 
+    <!-- Professional notice -->
     <div class="tray-note">
-      Please note: All food served in rooms has a ₦500 tray charge.
+      Prices are in Nigerian Naira (₦) and include 7.5% VAT. A 10% service charge may apply for dine-in.
+      Please inform us of any allergies. Alcohol is served to guests 18+ only—drink responsibly.
     </div>
   </main>
 
-  <!-- Bottom nav: local file links -->
+  <!-- Bottom nav -->
   <nav class="bottom-nav">
     <a href="./index.html">Home</a>
+    <a href="./food.html">Food</a>
     <a href="./drinks.html" class="active">Drinks</a>
     <a href="./contact.html">Contact</a>
   </nav>

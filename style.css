@@ -33,14 +33,13 @@ header { text-align: center; padding: 20px; }
 .slogan { font-style: italic; color: #aaa; font-size: 0.9rem; margin-top: 0.5rem; }
 
 /* === Menu Banner === */
-/* ↑ bigger block + bigger text only */
 .menu-banner {
   background-color: #0f0f0f;
   text-align: center;
   padding: 1rem 0;         /* was 0.8rem */
   font-size: 1.25rem;      /* was 1.1rem */
   font-weight: 800;
-  margin: 0.35rem 0 0.8rem;/* ⬅ moved up a bit (was 0.8rem 0) */
+  margin: 0.35rem 0 0.8rem;/* moved up a bit */
   border-top: 1px solid var(--gold-deep);
   border-bottom: 1px solid var(--gold-deep);
 }
@@ -55,17 +54,16 @@ header { text-align: center; padding: 20px; }
   color: transparent;
 }
 
-/* === Featured Meals (no HTML change needed)
-   target the h2 that comes right AFTER the .menu-banner */
+/* === Featured Meals (the H2 after .menu-banner) */
 .menu-banner + h2{
   text-align:center;
-  font-size: 1.35rem !important;   /* a bit larger */
+  font-size: 1.35rem !important;
   margin: .6rem 0 0;
   letter-spacing: .04em;
   background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold-mid) 55%, var(--gold-deep) 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent !important;   /* override inline color */
+  color: transparent !important;
 }
 
 /* === Grid Layout === */
@@ -124,7 +122,6 @@ header { text-align: center; padding: 20px; }
 }
 
 /* === Bottom Navigation === */
-/* keep gold always; add subtle glow only while pressing */
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -140,7 +137,7 @@ header { text-align: center; padding: 20px; }
 .bottom-nav a:visited,
 .bottom-nav a:focus,
 .bottom-nav a:active{
-  color: var(--gold-solid);        /* never turns white */
+  color: var(--gold-solid);
   font-weight: 700;
   text-decoration: none;
   font-size: 22px;
@@ -148,7 +145,7 @@ header { text-align: center; padding: 20px; }
 }
 
 .bottom-nav a.active{
-  color: var(--gold-solid);        /* keep gold when active */
+  color: var(--gold-solid);
   border-bottom: 1px solid var(--gold-deep);
 }
 
@@ -197,7 +194,7 @@ header { text-align: center; padding: 20px; }
 /* === Drinks categories: gold tiles + toggle glow === */
 .menu-toggle{
   display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 1fr)); /* 2-up like your shot */
+  grid-template-columns: repeat(2, minmax(220px, 1fr)); /* 2-up */
   gap: 1.2rem;
   max-width: 820px;
   margin: 1.4rem auto 1.8rem;
@@ -239,14 +236,113 @@ header { text-align: center; padding: 20px; }
     0 8px 30px rgba(232,193,49,.35);
 }
 
-/* keep colors stable on visited/focus */
+/* keep colors stable on visited/focus — FIX for dimming after click */
+.menu-toggle a:link,
 .menu-toggle a:visited,
-.menu-toggle a:focus{ color:#111; outline:none; }
+.menu-toggle a:focus{
+  background: linear-gradient(180deg,#f1d24a 0%,#e8c131 55%,#c4971e 100%) !important;
+  border: 2px solid #b68617 !important;
+  color:#111 !important;
+  opacity: 1 !important;
+  filter: none !important;
+  outline: none;
+}
 
 /* toggled/current page — soft golden glow behind */
 .menu-toggle a.active,
 .menu-toggle a[aria-current="page"]{
   box-shadow:
-    0 0 0 2px rgba(255,220,100,.55),           /* subtle ring */
-    0 16px 40px rgba(232,193,49,.42);          /* light shadow behind */
+    0 0 0 2px rgba(255,220,100,.55),
+    0 16px 40px rgba(232,193,49,.42);
+}
+/* === GOLD GLOW ON TOGGLE (tiles + bottom nav) === */
+
+/* remove default tap highlight so the glow is visible on mobile */
+a { -webkit-tap-highlight-color: transparent; }
+
+/* base tile gets its own glow layer sitting behind it */
+.menu-toggle a{
+  position: relative;
+  isolation: isolate;                  /* so the glow sits behind only this tile */
+  transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+/* the glow itself (off by default) */
+.menu-toggle a::after{
+  content:"";
+  position:absolute;
+  inset:-10px;                         /* extend outside the tile for a halo */
+  border-radius: 20px;
+  pointer-events:none;
+  z-index:-1;
+  opacity:0;
+  transition: opacity .18s ease;
+  background:
+    radial-gradient(60% 60% at 50% 50%,
+      rgba(232,193,49,.40) 0%,
+      rgba(232,193,49,.20) 45%,
+      transparent 70%);
+}
+
+/* show glow while interacting */
+.menu-toggle a:hover,
+.menu-toggle a:focus-visible{
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+  box-shadow:
+    0 2px 0 #8f6f05,
+    0 10px 28px rgba(232,193,49,.28);
+}
+.menu-toggle a:hover::after,
+.menu-toggle a:focus-visible::after,
+.menu-toggle a:active::after{          /* quick flash on tap */
+  opacity:1;
+}
+
+/* keep a persistent glow for the “current” category */
+.menu-toggle a.active,
+.menu-toggle a[aria-current="page"]{
+  box-shadow:
+    0 0 0 2px rgba(255,220,100,.55),
+    0 12px 36px rgba(232,193,49,.28);
+}
+.menu-toggle a.active::after,
+.menu-toggle a[aria-current="page"]::after{
+  opacity:1;
+}
+
+/* bottom nav subtle glow on press/hover (no color change) */
+.bottom-nav a:hover,
+.bottom-nav a:focus-visible,
+.bottom-nav a:active{
+  text-shadow: 0 0 12px rgba(232,193,49,.45);
+  box-shadow:
+    inset 0 -2px 0 var(--gold-mid),
+    0 0 20px rgba(232,193,49,.35);
+}
+/* === Gold glow for food images/cards === */
+/* keep the current hover scale, just add a halo */
+.food-card{
+  position: relative;
+  transition: box-shadow .22s ease, filter .22s ease;
+  /* existing transform hover rule remains intact above */
+}
+
+/* hover / keyboard focus */
+.food-card:hover,
+.food-card:focus-within{
+  /* keep the original soft shadow + add golden glow outside the card */
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.35),         /* your base shadow */
+    0 0 18px rgba(232,193,49,0.28),     /* gold halo */
+    0 10px 28px rgba(232,193,49,0.22);  /* ambient gold glow */
+  filter: brightness(1.02);
+}
+
+/* tap/press feedback (mobile) */
+.food-card:active{
+  box-shadow:
+    0 2px 8px rgba(0,0,0,0.45),
+    0 0 22px rgba(232,193,49,0.35),
+    0 12px 32px rgba(232,193,49,0.28);
 }
