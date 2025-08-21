@@ -1,4 +1,12 @@
 /* === Base Styles === */
+:root{
+  /* Maximus gold v2 */
+  --gold-bright: #f7db4b;  /* lighter shine */
+  --gold-mid:    #e8c131;  /* main (your new color) */
+  --gold-deep:   #8f6f05;  /* deeper shadow */
+  --gold-solid:  #e8c131;  /* solid fallback */
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -15,18 +23,19 @@ header {
   padding: 20px;
 }
 
+/* Bigger logo; no borders anywhere, let the image shine */
 .logo {
-  width: 260px;        /* bigger logo */
+  width: 260px;
   max-width: 95%;
   height: auto;
   margin-bottom: 10px;
   object-fit: contain;
 }
 
-.hero-title,
-h1 {
+/* Keep for pages that still use headings */
+.hero-title, h1 {
   font-size: 2rem;
-  color: #c8a15f; /* Maximus gold */
+  color: var(--gold-solid);
   margin: 0;
 }
 
@@ -39,15 +48,24 @@ h1 {
 
 /* === Menu Banner === */
 .menu-banner {
-  background-color: #1f1f1f;
-  color: #c8a15f; /* Maximus gold */
+  background-color: #0f0f0f;
   text-align: center;
-  padding: 0.4rem 0;
-  font-size: 0.95rem;
-  font-weight: bold;
-  border-top: 2px solid #c8a15f; /* Maximus gold */
-  border-bottom: 2px solid #c8a15f; /* Maximus gold */
-  margin: 0.6rem 0;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin: 0.8rem 0;
+  border-top: 1px solid var(--gold-deep);
+  border-bottom: 1px solid var(--gold-deep);
+}
+
+/* Gold gradient fill for the banner title */
+.menu-banner h2{
+  margin: 0;
+  letter-spacing: 0.06em;
+  background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold-mid) 55%, var(--gold-deep) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
 /* === Grid Layout === */
@@ -70,9 +88,7 @@ h1 {
   transition: transform 0.3s ease;
 }
 
-.food-card:hover {
-  transform: scale(1.03);
-}
+.food-card:hover { transform: scale(1.03); }
 
 .food-card img {
   width: 100%;
@@ -82,10 +98,7 @@ h1 {
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-.food-info {
-  padding: 0.3rem;
-  line-height: 1.1;
-}
+.food-info { padding: 0.3rem; line-height: 1.1; }
 
 .food-info h4 {
   color: #fff;
@@ -93,11 +106,15 @@ h1 {
   margin: 0.2rem 0;
 }
 
+/* Price text uses the same gold gradient feel */
 .food-info p {
-  color: #c8a15f; /* Maximus gold */
-  font-weight: bold;
+  font-weight: 800;
   font-size: 1.3rem;
   margin: 0;
+  background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold-mid) 55%, var(--gold-deep) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
 /* === Meal Captions === */
@@ -138,47 +155,31 @@ h1 {
   border-top: 1px solid #333;
   display: flex;
   justify-content: space-around;
-  padding: 0.4rem 0;
+  padding: 0.5rem 0;
   z-index: 1000;
 }
 
 .bottom-nav a {
-  color: #c8a15f; /* Maximus gold */
-  font-weight: bold;
+  color: var(--gold-solid);
+  font-weight: 700;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 22px;
   padding: 0.6rem;
 }
 
 .bottom-nav a.active {
   color: #fff;
-  border-bottom: 2px solid #c8a15f; /* Maximus gold */
+  border-bottom: 1px solid var(--gold-deep);
 }
 
 /* === Responsive === */
 @media (max-width: 600px) {
-  .logo { width: 180px; }  /* scale logo on small screens */
-
-  .hero-title {
-    font-size: 1.5rem;
-  }
-
-  .slogan {
-    font-size: 0.75rem;
-  }
-
-  .food-card {
-    width: 48%;
-  }
-
-  .food-info h4,
-  .food-info p {
-    font-size: 0.78rem;
-  }
-
-  .bottom-nav a {
-    font-size: 18px;
-  }
+  .logo { width: 180px; }
+  .hero-title { font-size: 1.5rem; }
+  .slogan { font-size: 0.75rem; }
+  .food-card { width: 48%; }
+  .food-info h4, .food-info p { font-size: 0.78rem; }
+  .bottom-nav a { font-size: 18px; }
 }
 
 @media (max-width: 400px) {
@@ -186,10 +187,8 @@ h1 {
   .logo { width: 160px; }
 }
 
-/* === Prevent last row being hidden behind nav === */
-.food-grid {
-  padding-bottom: 4rem;
-}
+/* Prevent last row being hidden behind nav */
+.food-grid { padding-bottom: 4rem; }
 
 /* === Contact page elements === */
 .contact-container {
@@ -204,9 +203,12 @@ h1 {
 }
 
 .contact-container h2 {
-  color: #c8a15f; /* Maximus gold */
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
+  background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold-mid) 55%, var(--gold-deep) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
 .contact-item {
@@ -216,20 +218,12 @@ h1 {
   line-height: 1.6;
 }
 
-.contact-item span {
-  display: block;
-  color: #c8a15f; /* Maximus gold */
-  font-weight: bold;
-  margin-bottom: 0.3rem;
-}
-
+.contact-item span,
 .contact-item a {
-  color: #c8a15f; /* Maximus gold */
+  color: var(--gold-solid);
   text-decoration: none;
   display: block;
   margin: 0.3rem 0;
 }
 
-.contact-item a:hover {
-  text-decoration: underline;
-}
+.contact-item a:hover { text-decoration: underline; }
