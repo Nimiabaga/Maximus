@@ -70,19 +70,56 @@
       /* ✅ No color filter so icons keep original colors */
     }
 
+    /* ===== Slideshow frame (added) ===== */
     .contact-image {
       width: 100%;
       max-width: 600px;
       margin: 1rem auto;
+      position: relative;
+      border: 1px solid #333;         /* subtle frame */
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 28px rgba(232,193,49,.12); /* soft gold glow */
     }
-
+    /* maintain aspect so slides overlap perfectly */
+    .contact-image::before {
+      content: "";
+      display: block;
+      padding-top: 56.25%; /* 16:9 */
+    }
     .contact-image img {
+      position: absolute;
+      inset: 0;
       width: 100%;
-      height: auto;
+      height: 100%;
       object-fit: cover;
       display: block;
-      border-radius: 10px;
+      border-radius: 0; /* inside the frame already rounded */
+      opacity: 0;
+      transition: opacity .8s ease;
     }
+    .contact-image img.show { opacity: 1; }
+
+    /* small dots for slide indicator */
+    .slide-dots {
+      position: absolute;
+      left: 50%;
+      bottom: 10px;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+      z-index: 2;
+    }
+    .slide-dots .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: rgba(255,255,255,.45);
+      border: 1px solid rgba(182,134,23,.65);
+    }
+    .slide-dots .dot.active {
+      background: #b68617;             /* brand gold */
+      box-shadow: 0 0 12px rgba(182,134,23,.65);
+    }
+    /* ===== End slideshow styles ===== */
 
     .footer-note {
       text-align: center;
@@ -157,8 +194,13 @@
   </header>
 
   <div class="contact-image animate__animated animate__fadeInUp">
-    <!-- ✅ Contact banner image -->
-    <img src="images/contact.jpg" alt="Contact - Maximus Lounge & Bar" />
+    <!-- ✅ Slideshow images (contact.jpg + contact2.jpg) -->
+    <img src="images/contact.jpg" alt="Contact - Maximus Lounge & Bar" class="slide show" />
+    <img src="images/contact2.jpg" alt="Contact 2 - Maximus Lounge & Bar" class="slide" />
+    <div class="slide-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+    </div>
   </div>
 
   <div class="contact-container animate__animated animate__fadeIn">
@@ -222,5 +264,25 @@
     <a href="drinks.html">Drinks</a>
     <a href="contact.html" class="active">Contact</a>
   </nav>
+
+  <!-- 🔁 Minimal JS to cycle slides (added) -->
+  <script>
+    (function () {
+      const slides = document.querySelectorAll('.contact-image .slide');
+      const dots   = document.querySelectorAll('.contact-image .dot');
+      let i = 0;
+
+      function show(n){
+        slides.forEach((img, idx) => img.classList.toggle('show', idx === n));
+        dots.forEach((d, idx) => d.classList.toggle('active', idx === n));
+      }
+      show(0);
+
+      setInterval(() => {
+        i = (i + 1) % slides.length;
+        show(i);
+      }, 3500);
+    })();
+  </script>
 </body>
 </html>
