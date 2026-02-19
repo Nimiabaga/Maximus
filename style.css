@@ -121,6 +121,27 @@ header { text-align: center; padding: 20px; }
   background-color: #111; border-radius: 10px; border: 1px solid #333; line-height: 1.4;
 }
 
+.page-back {
+  text-align: center;
+  margin: 0 auto 5rem;
+}
+
+.page-back a {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--gold-deep);
+  background-color: #111;
+  color: var(--gold-solid);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.page-back a:hover,
+.page-back a:focus-visible {
+  box-shadow: 0 0 10px rgba(232, 193, 49, 0.28);
+}
+
 /* === Bottom Navigation === */
 .bottom-nav {
   position: fixed;
