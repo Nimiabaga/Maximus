@@ -9,82 +9,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
 
-    /* === Hero Slideshow === */
-    .contact-hero {
-      position: relative;
-      width: 100%;
-      height: 42vh;
-      overflow: hidden;
-    }
-
-    .contact-hero .slide {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0;
-      transition: opacity 1s ease;
-    }
-
-    .contact-hero .slide.show { opacity: 1; }
-
-    /* dark gradient overlay */
-    .contact-hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom,
-        rgba(0,0,0,0.25) 0%,
-        rgba(0,0,0,0.6) 70%,
-        rgba(0,0,0,1) 100%);
-      z-index: 1;
-    }
-
-    .hero-text {
-      position: absolute;
-      bottom: 1.8rem;
-      left: 0; right: 0;
-      text-align: center;
-      z-index: 2;
-    }
-
-    .hero-text h2 {
-      margin: 0;
-      font-size: 2rem;
-      font-weight: 900;
-      letter-spacing: 0.12em;
-      color: #fff;
-      text-transform: uppercase;
-    }
-
-    .hero-text p {
-      margin: 0.3rem 0 0;
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.6);
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-    }
-
-    /* slide dots */
-    .hero-dots {
-      position: absolute;
-      bottom: 0.6rem;
-      left: 50%;
-      transform: translateX(-50%);
+    /* === Hero placeholder === */
+    .contact-hero-blank {
       display: flex;
-      gap: 5px;
-      z-index: 3;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 1rem 1.5rem;
+      background: #000;
     }
-
-    .hero-dots .dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.3);
-      transition: background 0.3s;
-    }
-
-    .hero-dots .dot.active { background: #e60000; }
 
     /* === Section label === */
     .section-label {
@@ -260,18 +193,10 @@
 </head>
 <body>
 
-  <!-- Hero Slideshow -->
-  <div class="contact-hero">
-    <img src="images/contact.jpg"  alt="Maximus" class="slide show" />
-    <img src="images/contact2.jpg" alt="Maximus" class="slide" />
-    <div class="hero-text animate__animated animate__fadeInUp">
-      <h2>Find Us</h2>
-      <p>Maximus Lounge &amp; Bar</p>
-    </div>
-    <div class="hero-dots">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-    </div>
+  <!-- Hero placeholder (image coming soon) -->
+  <div class="contact-hero-blank">
+    <img src="images/maximus.png" alt="Maximus Lounge & Bar" class="logo" style="margin-bottom:0.5rem;" />
+    <p style="font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin:0;">Maximus Lounge &amp; Bar</p>
   </div>
 
   <!-- Section label -->
@@ -299,11 +224,11 @@
       <span class="value">Chat with Us</span>
     </a>
 
-    <a href="https://www.instagram.com/maximusbar.ng?igsh=dGs0Nm82aXJ0dGly"
+    <a href="https://www.instagram.com/maxloungephc"
        target="_blank" rel="noopener" class="contact-card">
       <div class="icon-circle ic-pink"><i class="fab fa-instagram"></i></div>
       <span class="label">Instagram</span>
-      <span class="value">@maximusbar.ng</span>
+      <span class="value">@maxloungephc</span>
     </a>
 
   </div>
@@ -346,19 +271,6 @@
     <a href="contact.html" class="active">Contact</a>
   </nav>
 
-  <script>
-    (function () {
-      const slides = document.querySelectorAll('.contact-hero .slide');
-      const dots   = document.querySelectorAll('.hero-dots .dot');
-      let i = 0;
-      function show(n) {
-        slides.forEach((s, idx) => s.classList.toggle('show', idx === n));
-        dots.forEach((d, idx) => d.classList.toggle('active', idx === n));
-      }
-      show(0);
-      setInterval(() => { i = (i + 1) % slides.length; show(i); }, 3500);
-    })();
-  </script>
 
   <script src="app.js"></script>
 </body>
