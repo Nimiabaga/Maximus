@@ -3,265 +3,342 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - Maximus Lounge & Bar</title>
+  <title>Contact — Maximus Lounge & Bar</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <!-- ✅ Font Awesome for WhatsApp icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
   <style>
-    body {
-      background-color: #000;
-      color: #ddd;
-      font-family: Arial, sans-serif;
-    }
 
-    header {
-      text-align: center;
-      padding: 1rem;
-    }
-
-    .hero-title {
-      color: #e60000; /* brand red */
-      margin-top: 0.5rem;
-    }
-
-    .slogan {
-      color: #e60000; /* brand red */
-      font-size: 0.95rem;
-    }
-
-    .contact-container {
-      max-width: 600px;
-      margin: 2rem auto 5rem;
-      padding: 2rem;
-      background-color: #111;
-      border: 1px solid #333;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    .contact-container h2 {
-      color: #e60000; /* brand red */
-      margin-bottom: 1rem;
-    }
-
-    .contact-item {
-      margin: 1rem 0;
-      font-size: 1rem;
-      color: #ddd;
-    }
-
-    .contact-item a {
-      color: #e60000; /* brand red */
-      text-decoration: none;
-    }
-
-    .contact-item a:hover {
-      text-decoration: underline;
-    }
-
-    .icon {
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-      margin-right: 8px;
-      object-fit: contain;
-      /* ✅ No color filter so icons keep original colors */
-    }
-
-    /* ===== Slideshow frame (added) ===== */
-    .contact-image {
-      width: 100%;
-      max-width: 600px;
-      margin: 1rem auto;
+    /* === Hero Slideshow === */
+    .contact-hero {
       position: relative;
-      border: 1px solid #333;         /* subtle frame */
-      border-radius: 10px;
+      width: 100%;
+      height: 42vh;
       overflow: hidden;
-      box-shadow: 0 8px 28px rgba(230,0,0,.18); /* soft red glow */
     }
-    /* maintain aspect so slides overlap perfectly */
-    .contact-image::before {
-      content: "";
-      display: block;
-      padding-top: 56.25%; /* 16:9 */
-    }
-    .contact-image img {
+
+    .contact-hero .slide {
       position: absolute;
       inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
-      border-radius: 0; /* inside the frame already rounded */
       opacity: 0;
-      transition: opacity .8s ease;
+      transition: opacity 1s ease;
     }
-    .contact-image img.show { opacity: 1; }
 
-    /* small dots for slide indicator */
-    .slide-dots {
+    .contact-hero .slide.show { opacity: 1; }
+
+    /* dark gradient overlay */
+    .contact-hero::after {
+      content: '';
       position: absolute;
-      left: 50%;
-      bottom: 10px;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 6px;
+      inset: 0;
+      background: linear-gradient(to bottom,
+        rgba(0,0,0,0.25) 0%,
+        rgba(0,0,0,0.6) 70%,
+        rgba(0,0,0,1) 100%);
+      z-index: 1;
+    }
+
+    .hero-text {
+      position: absolute;
+      bottom: 1.8rem;
+      left: 0; right: 0;
+      text-align: center;
       z-index: 2;
     }
-    .slide-dots .dot {
-      width: 8px; height: 8px; border-radius: 50%;
-      background: rgba(255,255,255,.45);
-      border: 1px solid rgba(230,0,0,.7);
-    }
-    .slide-dots .dot.active {
-      background: #e60000;             /* brand red */
-      box-shadow: 0 0 12px rgba(230,0,0,.75);
-    }
-    /* ===== End slideshow styles ===== */
 
+    .hero-text h2 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .hero-text p {
+      margin: 0.3rem 0 0;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    /* slide dots */
+    .hero-dots {
+      position: absolute;
+      bottom: 0.6rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 5px;
+      z-index: 3;
+    }
+
+    .hero-dots .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.3);
+      transition: background 0.3s;
+    }
+
+    .hero-dots .dot.active { background: #e60000; }
+
+    /* === Section label === */
+    .section-label {
+      text-align: center;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #e60000;
+      margin: 2rem 0 1rem;
+    }
+
+    /* === Contact Cards Grid === */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+      padding: 0 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact-card {
+      background: #141414;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 18px;
+      padding: 1.4rem 1rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.7rem;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.6);
+    }
+
+    .contact-card .icon-circle {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+
+    .contact-card .label {
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .contact-card .value {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    /* icon circle colors */
+    .ic-red   { background: rgba(230,0,0,0.15);    color: #e60000; border: 1px solid rgba(230,0,0,0.3); }
+    .ic-blue  { background: rgba(30,120,255,0.12); color: #4d94ff; border: 1px solid rgba(30,120,255,0.25); }
+    .ic-green { background: rgba(37,211,102,0.12); color: #25D366; border: 1px solid rgba(37,211,102,0.25); }
+    .ic-pink  { background: rgba(200,50,150,0.12); color: #e040a0; border: 1px solid rgba(200,50,150,0.25); }
+
+    /* === Address full-width row === */
+    .contact-address {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: #141414;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 18px;
+      padding: 1.1rem 1.2rem;
+      margin: 0.75rem 1rem 0;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+    }
+
+    .contact-address .icon-circle {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    .contact-address .addr-text .label {
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-address .addr-text .value {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    /* === Map === */
+    .map-wrap {
+      margin: 1.8rem 1rem 0;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.07);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 220px;
+      border: 0;
+      display: block;
+    }
+
+    /* === Footer === */
     .footer-note {
       text-align: center;
-      font-size: 0.85rem;
-      color: #e60000; /* brand red */
-      margin-bottom: 5rem;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.25);
+      letter-spacing: 0.08em;
+      margin: 2rem 0 7rem;
     }
 
-    /* 📞 Floating Call Button */
-    .call-button {
+    /* === Floating Buttons === */
+    .fab-stack {
       position: fixed;
       bottom: 90px;
-      right: 20px;
-      background-color: #e60000; /* brand red */
-      color: white;
-      border-radius: 50%;
-      padding: 15px;
-      font-size: 20px;
+      right: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
       z-index: 1000;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      text-decoration: none;
     }
 
-    .call-button:hover {
-      background-color: #e60000; /* keep brand red on hover */
-    }
-
-    /* 💬 Floating WhatsApp Button (keep WhatsApp green) */
-    .whatsapp-button {
-      position: fixed;
-      bottom: 150px;
-      right: 20px;
-      background-color: #25D366; /* WhatsApp green */
-      color: white;
+    .fab {
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
-      padding: 15px;
-      font-size: 20px;
-      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: #fff;
       text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+      transition: transform 0.2s ease;
     }
 
-    .whatsapp-button:hover {
-      background-color: #1ebe5d; /* WhatsApp darker green */
-    }
+    .fab:hover { transform: scale(1.1); }
+    .fab-whatsapp { background: #25D366; }
+    .fab-call     { background: #e60000; }
 
-    .whatsapp-button i {
-      font-size: 24px;
-    }
-
-    /* 📍 Map */
-    .map-container {
-      margin: 2rem auto;
-      max-width: 600px;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-
-    .map-container iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-    }
   </style>
 </head>
 <body>
-  <header class="animate__animated animate__fadeInDown">
-    <img src="images/maximus.png" alt="Maximus Lounge & Bar Logo" class="logo" />
-    <h1 class="hero-title">Contact Us</h1>
-    <p class="slogan">We’re here to help you!</p>
-  </header>
 
-  <div class="contact-image animate__animated animate__fadeInUp">
-    <!-- ✅ Slideshow images (contact.jpg + contact2.jpg) -->
-    <img src="images/contact.jpg" alt="Contact - Maximus Lounge & Bar" class="slide show" />
-    <img src="images/contact2.jpg" alt="Contact 2 - Maximus Lounge & Bar" class="slide" />
-    <div class="slide-dots">
+  <!-- Hero Slideshow -->
+  <div class="contact-hero">
+    <img src="images/contact.jpg"  alt="Maximus" class="slide show" />
+    <img src="images/contact2.jpg" alt="Maximus" class="slide" />
+    <div class="hero-text animate__animated animate__fadeInUp">
+      <h2>Find Us</h2>
+      <p>Maximus Lounge &amp; Bar</p>
+    </div>
+    <div class="hero-dots">
       <span class="dot active"></span>
       <span class="dot"></span>
     </div>
   </div>
 
-  <div class="contact-container animate__animated animate__fadeIn">
-    <h2>Get in Touch</h2>
+  <!-- Section label -->
+  <p class="section-label animate__animated animate__fadeIn">Get in Touch</p>
 
-    <div class="contact-item">
-      <img src="images/phone.png" alt="Phone" class="icon" />
-      <a href="tel:+2348136253783">0813 625 3783</a>
-    </div>
+  <!-- Contact Cards -->
+  <div class="contact-grid animate__animated animate__fadeInUp">
 
-    <div class="contact-item">
-      <img src="images/email.png" alt="Email" class="icon" />
-      <a href="mailto:aifbenjack@gmail.com">aifbenjack@gmail.com</a>
-    </div>
+    <a href="tel:+2348136253783" class="contact-card">
+      <div class="icon-circle ic-red"><i class="fas fa-phone"></i></div>
+      <span class="label">Phone</span>
+      <span class="value">0813 625 3783</span>
+    </a>
 
-    <div class="contact-item">
-      <img src="images/location.png" alt="Address" class="icon" />
-      41 Woji Road, GRA, Port Harcourt
-    </div>
+    <a href="mailto:aifbenjack@gmail.com" class="contact-card">
+      <div class="icon-circle ic-blue"><i class="fas fa-envelope"></i></div>
+      <span class="label">Email</span>
+      <span class="value">aifbenjack@gmail.com</span>
+    </a>
 
-    <div class="contact-item">
-      <a href="https://www.instagram.com/maximusbar.ng?igsh=dGs0Nm82aXJ0dGly" target="_blank" rel="noopener">
-        <img src="images/instagram.png" alt="Instagram" class="icon" />
-        @maximusbar.ng
-      </a>
+    <a href="https://wa.me/2348136253783?text=Hello%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+       target="_blank" rel="noopener" class="contact-card">
+      <div class="icon-circle ic-green"><i class="fab fa-whatsapp"></i></div>
+      <span class="label">WhatsApp</span>
+      <span class="value">Chat with Us</span>
+    </a>
+
+    <a href="https://www.instagram.com/maximusbar.ng?igsh=dGs0Nm82aXJ0dGly"
+       target="_blank" rel="noopener" class="contact-card">
+      <div class="icon-circle ic-pink"><i class="fab fa-instagram"></i></div>
+      <span class="label">Instagram</span>
+      <span class="value">@maximusbar.ng</span>
+    </a>
+
+  </div>
+
+  <!-- Address full row -->
+  <div class="contact-address animate__animated animate__fadeInUp">
+    <div class="icon-circle ic-red"><i class="fas fa-location-dot"></i></div>
+    <div class="addr-text">
+      <span class="label">Address</span>
+      <span class="value">41 Woji Road, GRA, Port Harcourt</span>
     </div>
   </div>
 
-  <!-- 📍 Google Map Embed -->
-  <div class="map-container animate__animated animate__fadeIn">
+  <!-- Map -->
+  <div class="map-wrap animate__animated animate__fadeIn">
     <iframe
       src="https://www.google.com/maps?q=41+Woji+Road,+GRA,+Port+Harcourt,+Nigeria&output=embed"
-      allowfullscreen
-      loading="lazy">
+      allowfullscreen loading="lazy">
     </iframe>
   </div>
 
-  <!-- ✅ All rights reserved note -->
-  <div class="footer-note">
-    &copy; 2025 Maximus Lounge & Bar. All rights reserved.
+  <p class="footer-note">&copy; 2025 Maximus Lounge &amp; Bar. All rights reserved.</p>
+
+  <!-- Floating buttons -->
+  <div class="fab-stack">
+    <a href="https://wa.me/2348136253783?text=Hello%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+       class="fab fab-whatsapp" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+2348136253783" class="fab fab-call" title="Call us">
+      <i class="fas fa-phone"></i>
+    </a>
   </div>
 
-  <!-- 💬 Floating WhatsApp Button -->
-  <a
-    href="https://wa.me/2348136253783?text=Hello%2C%20I%27d%20like%20to%20make%20an%20enquiry."
-    class="whatsapp-button"
-    target="_blank"
-    title="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <!-- 📞 Floating Call Button -->
-  <a href="tel:+2348136253783" class="call-button" title="Call us">
-    📞
-  </a>
-
-  <!-- ✅ Navbar -->
-  <div class="page-back">
-    <a href="./index.html">← Back to Home</a>
-  </div>
-
+  <!-- Bottom nav -->
   <nav class="bottom-nav">
     <a href="index.html">Home</a>
     <a href="food.html">Food</a>
@@ -269,24 +346,19 @@
     <a href="contact.html" class="active">Contact</a>
   </nav>
 
-  <!-- 🔁 Minimal JS to cycle slides (added) -->
   <script>
     (function () {
-      const slides = document.querySelectorAll('.contact-image .slide');
-      const dots   = document.querySelectorAll('.contact-image .dot');
+      const slides = document.querySelectorAll('.contact-hero .slide');
+      const dots   = document.querySelectorAll('.hero-dots .dot');
       let i = 0;
-
-      function show(n){
-        slides.forEach((img, idx) => img.classList.toggle('show', idx === n));
+      function show(n) {
+        slides.forEach((s, idx) => s.classList.toggle('show', idx === n));
         dots.forEach((d, idx) => d.classList.toggle('active', idx === n));
       }
       show(0);
-
-      setInterval(() => {
-        i = (i + 1) % slides.length;
-        show(i);
-      }, 3500);
+      setInterval(() => { i = (i + 1) % slides.length; show(i); }, 3500);
     })();
   </script>
+
 </body>
 </html>
