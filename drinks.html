@@ -4,83 +4,82 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Drinks — Maximus Lounge & Bar</title>
-  <!-- use relative paths so it works via file:// -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <style>
-    /* Drinks page-only tweaks - Modern Cards with Icons */
-    .menu-toggle{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.9rem;
+    .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
       margin: 1.2rem auto 0;
       padding: 0 1rem 6rem;
       max-width: 500px;
     }
 
-    .menu-toggle a{
+    .menu-toggle a {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 1.4rem 1rem;
+      gap: 1rem;
+      padding: 0.7rem 1rem;
       border-radius: 16px;
-      font-weight: 700;
+      font-weight: 600;
       text-decoration: none;
       width: 100%;
-      background: #1a1a1a;
-      border: 1px solid #333;
-      color: #ffffff;
-      transition: all 0.25s ease;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      background: #161616;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-left: 3px solid #e60000;
+      color: #efefef;
       font-size: 0.95rem;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.04em;
       text-transform: capitalize;
       box-sizing: border-box;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
     }
 
-    .menu-toggle a::before {
-      font-size: 2.8rem;
-      display: block;
+    .menu-toggle a img {
+      width: 58px;
+      height: 58px;
+      min-width: 58px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    /* Chevron arrow on the right */
+    .menu-toggle a::after {
+      content: '›';
+      margin-left: auto;
+      font-size: 1.4rem;
+      color: #555;
+      font-weight: 300;
       line-height: 1;
+      transition: color 0.2s ease, transform 0.2s ease;
     }
 
     .menu-toggle a:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 24px rgba(230,0,0,0.3), 0 0 16px rgba(230,0,0,0.15);
-      border-color: rgba(230,0,0,0.5);
-      background: #222;
+      background: #1e1e1e;
+      transform: translateX(4px);
+      box-shadow: 0 4px 20px rgba(230,0,0,0.2);
+      border-left-color: #ff3333;
     }
 
-    .menu-toggle a:active{
-      transform: translateY(0);
-      box-shadow: 0 2px 8px rgba(230,0,0,0.3);
+    .menu-toggle a:hover::after {
+      color: #e60000;
+      transform: translateX(3px);
     }
 
-    /* keep color stable after visited */
+    .menu-toggle a:active {
+      transform: translateX(2px);
+    }
+
     .menu-toggle a:link,
     .menu-toggle a:visited,
     .menu-toggle a:focus {
-      color: #ffffff;
+      color: #efefef;
     }
-
-    /* Category Icons */
-    .menu-toggle a:nth-child(1)::before { content: "🍹"; }
-    .menu-toggle a:nth-child(2)::before { content: "🍸"; }
-    .menu-toggle a:nth-child(3)::before { content: "🥛"; }
-    .menu-toggle a:nth-child(4)::before { content: "🍓"; }
-    .menu-toggle a:nth-child(5)::before { content: "🥃"; }
-    .menu-toggle a:nth-child(6)::before { content: "🍷"; }
-    .menu-toggle a:nth-child(7)::before { content: "🍾"; }
-    .menu-toggle a:nth-child(8)::before { content: "🍻"; }
-    .menu-toggle a:nth-child(9)::before { content: "🥃"; }
-    .menu-toggle a:nth-child(10)::before { content: "🍯"; }
-    .menu-toggle a:nth-child(11)::before { content: "🥂"; }
-    .menu-toggle a:nth-child(12)::before { content: "🌵"; }
-
-    .food-info p small{ font-weight:600; opacity:.9; }
   </style>
 </head>
 <body>
@@ -90,23 +89,21 @@
 
   <div class="menu-banner"><h2>DRINKS MENU</h2></div>
 
-  <!-- Category Buttons -->
   <div class="menu-toggle">
-    <a href="./mocktails.html">Mocktails</a>
-    <a href="./cocktails.html">Cocktails</a>
-    <a href="./milkshakes.html">Milkshakes</a>
-    <a href="./smoothies.html">Smoothies</a>
-    <a href="./whiskey.html">Whiskey</a>
-    <a href="./wines.html">Wines</a>
-    <a href="./champagne.html">Champagne</a>
-    <a href="./beer-mixers.html">Beer-Mixers</a>
-    <a href="./liquor-rum-gin.html">Liquor-Rum-Gin</a>
-    <a href="./cognac.html">Cognac</a>
-    <a href="./shots.html">Shots</a>
-    <a href="./tequila.html">Tequila</a>
+    <a href="./mocktails.html"><img src="images/cinderella.jpg" alt="Mocktails">Mocktails</a>
+    <a href="./cocktails.html"><img src="images/mojito.jpg" alt="Cocktails">Cocktails</a>
+    <a href="./milkshakes.html"><img src="images/creamy-vanilla.jpg" alt="Milkshakes">Milkshakes</a>
+    <a href="./smoothies.html"><img src="images/banana-strawberry.jpg" alt="Smoothies">Smoothies</a>
+    <a href="./whiskey.html"><img src="images/glenfiddich-12yrs.jpg" alt="Whiskey">Whiskey</a>
+    <a href="./wines.html"><img src="images/belena-moscato.jpg" alt="Wines">Wines</a>
+    <a href="./champagne.html"><img src="images/belaire-fantome.jpg" alt="Champagne">Champagne</a>
+    <a href="./beer-mixers.html"><img src="images/beer.jpg" alt="Beer-Mixers">Beer-Mixers</a>
+    <a href="./liquor-rum-gin.html"><img src="images/hendricks.jpg" alt="Liquor-Rum-Gin">Liquor-Rum-Gin</a>
+    <a href="./cognac.html"><img src="images/hennessy-vs.jpg" alt="Cognac">Cognac</a>
+    <a href="./shots.html"><img src="images/tequila-shot.jpg" alt="Shots">Shots</a>
+    <a href="./tequila.html"><img src="images/don-julio.jpg" alt="Tequila">Tequila</a>
   </div>
 
-  <!-- Bottom nav -->
   <nav class="bottom-nav">
     <a href="./index.html">Home</a>
     <a href="./food.html">Food</a>
