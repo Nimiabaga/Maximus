@@ -718,32 +718,35 @@ body.page-exit {
    ============================================================ */
 .page-back {
   text-align: center;
-  margin: 1rem auto 2rem;
+  margin: 2rem auto 3rem;
+  padding: 1rem;
+  background: rgba(230, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 2px solid rgba(230, 0, 0, 0.3);
 }
 
 .page-back a {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.65rem 1.4rem;
+  padding: 1rem 2rem;
   border-radius: 50px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.05);
-  color: rgba(255,255,255,0.7);
+  border: 2px solid #e60000;
+  background: #e60000;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 600;
   letter-spacing: 0.04em;
-  backdrop-filter: blur(8px);
   transition: all 0.2s ease;
 }
 
 .page-back a:hover {
-  background: rgba(255,255,255,0.1);
+  background: #ff3333;
+  border-color: #ff3333;
   color: #ffffff;
-  border-color: rgba(255,255,255,0.25);
   transform: translateX(-3px);
-  box-shadow: none;
+  box-shadow: 0 0 20px rgba(230, 0, 0, 0.5);
 }
 
 /* ============================================================
