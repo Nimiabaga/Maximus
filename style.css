@@ -719,10 +719,7 @@ body.page-exit {
 .page-back {
   text-align: center;
   margin: 2rem auto 3rem;
-  padding: 1rem;
-  background: rgba(230, 0, 0, 0.1);
-  border-radius: 12px;
-  border: 2px solid rgba(230, 0, 0, 0.3);
+  padding: 0;
 }
 
 .page-back a {
@@ -731,8 +728,8 @@ body.page-exit {
   gap: 0.5rem;
   padding: 1rem 2rem;
   border-radius: 50px;
-  border: 2px solid #e60000;
-  background: #e60000;
+  border: none;
+  background: #1a1a1a;
   color: #ffffff;
   text-decoration: none;
   font-size: 0.95rem;
@@ -742,11 +739,10 @@ body.page-exit {
 }
 
 .page-back a:hover {
-  background: #ff3333;
-  border-color: #ff3333;
+  background: #2a2a2a;
   color: #ffffff;
   transform: translateX(-3px);
-  box-shadow: 0 0 20px rgba(230, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* ============================================================
