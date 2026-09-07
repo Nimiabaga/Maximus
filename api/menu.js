@@ -16,6 +16,9 @@ export default async function handler(req, res) {
     return;
   }
 
-  res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=15, stale-while-revalidate=45');
+  // No edge/CDN caching -- admin edits must show up immediately, not
+  // after a stale-while-revalidate window. This site is low-traffic
+  // enough that correctness matters more than shaving off requests.
+  res.setHeader('Cache-Control', 'no-store');
   res.status(200).json(data);
 }
