@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin — Maximus Lounge & Bar</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="animate__animated">
+    <img src="images/maximus.png" alt="Maximus Lounge & Bar" class="logo" />
+  </header>
+
+  <div class="menu-banner"><h2>ADMIN</h2></div>
+
+  <main>
+    <div id="login-view" class="admin-login">
+      <form id="login-form">
+        <label for="passcode">Admin passcode</label>
+        <input type="password" id="passcode" name="passcode" autocomplete="current-password" required />
+        <button type="submit">Log in</button>
+        <p id="login-error" class="admin-error" hidden></p>
+      </form>
+    </div>
+
+    <div id="editor-view" class="admin-editor" hidden>
+      <div class="admin-toolbar">
+        <span id="admin-status"></span>
+        <button type="button" id="logout-btn">Log out</button>
+      </div>
+      <div id="admin-categories"></div>
+    </div>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

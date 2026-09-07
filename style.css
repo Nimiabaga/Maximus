@@ -284,6 +284,45 @@ header {
   filter: drop-shadow(0 1px 4px rgba(201,168,76,0.4));
 }
 
+/* === Sold out === */
+.food-list-item {
+  position: relative;
+}
+
+.food-card.sold-out,
+.food-list-item.sold-out {
+  opacity: 0.45;
+  filter: grayscale(0.6);
+}
+
+.food-list-item.sold-out p {
+  background: none;
+  -webkit-text-fill-color: #999;
+  color: #999;
+  font-style: italic;
+  filter: none;
+}
+
+.sold-out-badge {
+  /* .food-card has overflow:hidden, so the badge sits fully within
+     the card bounds (a corner pill) rather than a corner ribbon
+     that would get clipped hanging off the edge. */
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #666;
+  color: #eee;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  pointer-events: none;
+  z-index: 2;
+}
+
 /* === Meal Captions / Tray Note === */
 .meal-caption {
   text-align: center; 
@@ -833,4 +872,125 @@ body.page-exit {
   background: linear-gradient(90deg, #1a1a1a 25%, #2a2a2a 50%, #1a1a1a 75%);
   background-size: 800px 100%;
   animation: shimmer 1.4s infinite linear;
+}
+
+/* === Admin page === */
+.admin-login,
+.admin-editor {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 1.2rem 1rem 4rem;
+}
+
+.admin-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 320px;
+  margin: 2rem auto 0;
+}
+
+.admin-login label {
+  color: #ccc;
+  font-size: 0.85rem;
+}
+
+.admin-login input[type="password"] {
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: #141414;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.admin-login button,
+.admin-toolbar button,
+.admin-item-row button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background: #e60000;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.admin-login button:hover,
+.admin-toolbar button:hover,
+.admin-item-row button:hover {
+  background: #cc0000;
+}
+
+.admin-error {
+  color: #ff6666;
+  font-size: 0.85rem;
+}
+
+.admin-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  gap: 1rem;
+}
+
+.admin-toolbar #admin-status {
+  font-size: 0.85rem;
+  min-height: 1.2em;
+}
+
+.admin-category {
+  margin-bottom: 1.6rem;
+}
+
+.admin-category h3 {
+  color: #e8c96a;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.6rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 0.4rem;
+}
+
+.admin-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-item-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #141414;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 0.6rem 0.8rem;
+  flex-wrap: wrap;
+}
+
+.admin-item-name {
+  flex: 1 1 140px;
+  color: #f0f0f0;
+  font-size: 0.9rem;
+}
+
+.admin-price-input {
+  width: 100px;
+  padding: 0.4rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: #0d0d0d;
+  color: #fff;
+}
+
+.admin-soldout-label {
+  color: #ccc;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }

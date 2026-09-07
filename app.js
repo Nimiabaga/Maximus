@@ -50,42 +50,47 @@
   });
 
   /* ----------------------------------------------------------
-     4. SCROLL-REVEAL — cards animate in as they enter viewport
-        Auto-applied to .scroll-reveal AND all .food-card elements
+     4 & 5. CARD ENHANCEMENT — scroll-reveal + skeleton loaders
+        Exposed as window.MaximusApp.enhanceCards(root) so that
+        menu-render.js can call it after injecting cards fetched
+        from the API (those don't exist yet when this script's
+        top-level code runs, since the fetch is async).
   ---------------------------------------------------------- */
-  // Auto-tag every food card so sub-pages get the effect too
-  document.querySelectorAll('.food-card').forEach(card => {
-    card.classList.add('scroll-reveal');
-  });
+  function enhanceCards(root = document) {
+    // Auto-tag every food card/list item so any page gets the effect
+    root.querySelectorAll('.food-card, .food-list-item').forEach(card => {
+      card.classList.add('scroll-reveal');
+    });
 
-  const revealItems = document.querySelectorAll('.scroll-reveal');
+    const revealItems = root.querySelectorAll('.scroll-reveal:not(.visible)');
 
-  if (revealItems.length > 0) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry, i) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => {
-              entry.target.classList.add('visible');
-            }, i * 80);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.08 }
-    );
-    revealItems.forEach(el => observer.observe(el));
+    if (revealItems.length > 0) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                entry.target.classList.add('visible');
+              }, i * 80);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.08 }
+      );
+      revealItems.forEach(el => observer.observe(el));
+    }
+
+    root.querySelectorAll('.food-card img').forEach(img => {
+      if (!img.complete) {
+        img.classList.add('skeleton');
+        img.addEventListener('load',  () => img.classList.remove('skeleton'), { once: true });
+        img.addEventListener('error', () => img.classList.remove('skeleton'), { once: true });
+      }
+    });
   }
 
-  /* ----------------------------------------------------------
-     5. SKELETON LOADERS — shimmer while images load
-  ---------------------------------------------------------- */
-  document.querySelectorAll('.food-card img').forEach(img => {
-    if (!img.complete) {
-      img.classList.add('skeleton');
-      img.addEventListener('load',  () => img.classList.remove('skeleton'), { once: true });
-      img.addEventListener('error', () => img.classList.remove('skeleton'), { once: true });
-    }
-  });
+  window.MaximusApp = { enhanceCards };
+  enhanceCards();
 
 })();

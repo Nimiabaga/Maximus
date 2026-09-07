@@ -1,0 +1,1813 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-07T17:48:24.225Z",
+  "categories": {
+    "appetizers": {
+      "label": "APPETIZERS",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "appetizers/samosa-5-pieces",
+          "name": "Samosa (5 pieces)",
+          "price": 7000,
+          "image": "images/samosa.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "appetizers/spring-rolls-5-pieces",
+          "name": "Spring Rolls (5 pieces)",
+          "price": 7000,
+          "image": "images/spring-rolls.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "appetizers/prawn-rolls-4-pieces",
+          "name": "Prawn Rolls (4 pieces)",
+          "price": 15000,
+          "image": "images/prawn-rolls.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "appetizers/bacon-wrapped-prawns-5-pieces",
+          "name": "Bacon Wrapped Prawns (5 pieces)",
+          "price": 12000,
+          "image": "images/bacon-wrapped-prawns.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "appetizers/chocolate-puffs-10-pieces",
+          "name": "Chocolate Puffs (10 pieces)",
+          "price": 7000,
+          "image": "images/chocolate-puffs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "appetizers/beef-quesadilla-4-pieces",
+          "name": "Beef Quesadilla (4 pieces)",
+          "price": 6000,
+          "image": "images/beef-quesadilla.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "appetizers/pan-fried-prawns-2-pieces",
+          "name": "Pan Fried Prawns (2 pieces)",
+          "price": 15000,
+          "image": "images/pan-fried-prawns.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "appetizers/chicken-pepper-soup",
+          "name": "Chicken Pepper Soup",
+          "price": 8000,
+          "image": "images/chicken-pepper-soup.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "appetizers/goat-meat-peppersoup",
+          "name": "Goat Meat Peppersoup",
+          "price": 7000,
+          "image": "images/goat-meat-peppersoup.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "appetizers/turkey-pepper-soup",
+          "name": "Turkey Pepper Soup",
+          "price": 10000,
+          "image": "images/turkey-pepper-soup.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "appetizers/catfish-peppersoup",
+          "name": "Catfish Peppersoup",
+          "price": 10000,
+          "image": "images/catfish-peppersoup.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Takeout ₦1000"
+    },
+    "bbq-fries": {
+      "label": "FRIES",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "bbq-fries/yam-fries",
+          "name": "Yam Fries",
+          "price": 5000,
+          "image": "images/yam-fries.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "bbq-fries/french-fries",
+          "name": "French Fries",
+          "price": 5000,
+          "image": "images/french-fries.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "bbq-fries/mini-chips",
+          "name": "Mini Chips",
+          "price": 3000,
+          "image": "images/mini-chips.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Takeout ₦1000"
+    },
+    "beer-mixers": {
+      "label": "BEER & MIXERS",
+      "layout": "list",
+      "items": [
+        {
+          "id": "beer-mixers/beer",
+          "name": "Beer",
+          "price": 3000,
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "beer-mixers/water",
+          "name": "Water",
+          "price": 1000,
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "beer-mixers/soda",
+          "name": "Soda",
+          "price": 2000,
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "beer-mixers/redbull",
+          "name": "Redbull",
+          "price": 5000,
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "beer-mixers/black-bullet",
+          "name": "Black Bullet",
+          "price": 5000,
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "beer-mixers/chivita",
+          "name": "Chivita",
+          "price": 5000,
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "beer-mixers/cranberry",
+          "name": "Cranberry",
+          "price": 4000,
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "beer-mixers/malt",
+          "name": "Malt",
+          "price": 2500,
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "beer-mixers/big-stout",
+          "name": "Big Stout",
+          "price": 5000,
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Prices include VAT where applicable.",
+      "groupBannerImage": "images/beer-mixers-group.jpg"
+    },
+    "bites": {
+      "label": "BITES",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "bites/peppered-snail",
+          "name": "Peppered Snail",
+          "price": 10000,
+          "image": "images/peppered-snail.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "bites/peppered-chicken",
+          "name": "Peppered Chicken",
+          "price": 8000,
+          "image": "images/peppered-chicken.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "bites/butterfly-prawn",
+          "name": "Butterfly Prawn",
+          "price": 15000,
+          "image": "images/butterfly-prawn.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "bites/peppered-turkey",
+          "name": "Peppered Turkey",
+          "price": 10000,
+          "image": "images/peppered-turkey.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "bites/peppered-gizzard",
+          "name": "Peppered Gizzard",
+          "price": 7000,
+          "image": "images/peppered-gizzard.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "bites/chicken-wings",
+          "name": "Chicken Wings",
+          "price": 7000,
+          "image": "images/chicken-wings.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "bites/goat-meat",
+          "name": "Goat Meat",
+          "price": 7000,
+          "image": "images/goat-meat.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "bites/prawn-suya",
+          "name": "Prawn Suya",
+          "price": 15000,
+          "image": "images/prawn-suya.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Takeout ₦1000"
+    },
+    "burger": {
+      "label": "BURGER",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "burger/beef-burger",
+          "name": "Beef Burger",
+          "price": 8000,
+          "image": "images/beef-burger.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "burger/double-patties-burger",
+          "name": "Double Patties Burger",
+          "price": 10000,
+          "image": "images/double-patties.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "burger/chicken-burger",
+          "name": "Chicken Burger",
+          "price": 7000,
+          "image": "images/chicken-burger.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "burger/tripple-decker-burger",
+          "name": "Tripple Decker Burger",
+          "price": 15000,
+          "image": "images/triple-decker-burger.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Takeout ₦1000"
+    },
+    "champagne": {
+      "label": "CHAMPAGNE",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "champagne/belaire-fant-me-ros",
+          "name": "Belaire Fantôme Rosé",
+          "price": 100000,
+          "image": "images/belaire-fantome-rose.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "champagne/belaire-fant-me-lux",
+          "name": "Belaire Fantôme lux",
+          "price": 110000,
+          "image": "images/belaire-fantome.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "champagne/veuve-rich",
+          "name": "Veuve rich",
+          "price": 250000,
+          "image": "images/Veuve rich.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "champagne/belaire-fant-me-gold",
+          "name": "Belaire Fantôme Gold",
+          "price": 100000,
+          "image": "images/belaire-fantome-gold.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "champagne/veuve-brut",
+          "name": "Veuve brut",
+          "price": 230000,
+          "image": "images/veuve-clicquot.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "champagne/dom-perignon",
+          "name": "Dom Perignon",
+          "price": 950000,
+          "image": "images/dom-perignon.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "champagne/laurent-perrier-demi-sec",
+          "name": "Laurent Perrier Demi sec",
+          "price": 180000,
+          "image": "images/laurent-perrier-demi-sec.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "champagne/gh-mumm-demi-sec",
+          "name": "GH Mumm Demi Sec",
+          "price": 200000,
+          "image": "images/gh-mumm-demi-sec.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "champagne/gh-mumm-brut",
+          "name": "GH Mumm Brut",
+          "price": 150000,
+          "image": "images/gh-mumm-brut.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable."
+    },
+    "cocktails": {
+      "label": "COCKTAILS",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "cocktails/smoky-lamp",
+          "name": "Smoky Lamp",
+          "price": 12000,
+          "image": "images/smoky-lamp.jpg",
+          "soldOut": false,
+          "note": "Jagermeister, Irish Whiskey, Sour Mix, Cinnamon"
+        },
+        {
+          "id": "cocktails/zombie",
+          "name": "Zombie",
+          "price": 10000,
+          "image": "images/zombie-cocktail.jpg",
+          "soldOut": false,
+          "note": "Mixed Rum, Apricot Brandy, Falernum Liqueur, Lemon, Orange & Pineapple Juice"
+        },
+        {
+          "id": "cocktails/irish-coffee",
+          "name": "Irish Coffee",
+          "price": 10000,
+          "image": "images/irish-coffee-cocktail.jpg",
+          "soldOut": false,
+          "note": "Hot Coffee, Milk, Irish Whiskey"
+        },
+        {
+          "id": "cocktails/frozen-strawberry-margarita",
+          "name": "Frozen Strawberry Margarita",
+          "price": 10000,
+          "image": "images/frozen-strawberry-margarita.jpg",
+          "soldOut": false,
+          "note": "Tequila, Strawberry, Sour Mix"
+        },
+        {
+          "id": "cocktails/frozen-blue-margarita",
+          "name": "Frozen Blue Margarita",
+          "price": 10000,
+          "image": "images/frozen-blue-margarita.jpg",
+          "soldOut": false,
+          "note": "Tequila, Orange Liqueur, Blue Curacao"
+        },
+        {
+          "id": "cocktails/sweet-colorado",
+          "name": "Sweet Colorado",
+          "price": 10000,
+          "image": "images/sweet-colorado-cocktail.jpg",
+          "soldOut": false,
+          "note": "Strong Alcoholic Mix, Aged Whiskey, Red Berry Liqueur"
+        },
+        {
+          "id": "cocktails/maximus-electric-iced-tea",
+          "name": "Maximus Electric Iced Tea",
+          "price": 10000,
+          "image": "images/maximus-electric-iced-tea.jpg",
+          "soldOut": false,
+          "note": "Strong Alcoholic Mix, Lemon Soda, Blue Curacao"
+        },
+        {
+          "id": "cocktails/classic-margarita",
+          "name": "Classic Margarita",
+          "price": 10000,
+          "image": "images/classic-margarita.jpg",
+          "soldOut": false,
+          "note": "Tequila, Triple Sec, Lemon"
+        },
+        {
+          "id": "cocktails/long-island-iced-tea",
+          "name": "Long Island Iced Tea",
+          "price": 10000,
+          "image": "images/long-island-iced-tea.jpg",
+          "soldOut": false,
+          "note": "Strong Alcoholic Mix, Lemon, Coke"
+        },
+        {
+          "id": "cocktails/kiwi-fizzy",
+          "name": "Kiwi Fizzy",
+          "price": 10000,
+          "image": "images/kiwi-fizzy.jpg",
+          "soldOut": false,
+          "note": "Vodka, Coconut Rum, Kiwi Syrup, Pineapple, Orange"
+        },
+        {
+          "id": "cocktails/mai-tai",
+          "name": "Mai Tai",
+          "price": 10000,
+          "image": "images/mai-tai.jpg",
+          "soldOut": false,
+          "note": "Gold & Dark Rum, Orgeat Syrup, Orange Liqueur, Lemon"
+        },
+        {
+          "id": "cocktails/blue-hawaii",
+          "name": "Blue Hawaii",
+          "price": 10000,
+          "image": "images/blue-hawaii.jpg",
+          "soldOut": false,
+          "note": "Vodka, Rum, Blue Curacao, Pineapple, Sour Mix"
+        },
+        {
+          "id": "cocktails/winter-breeze",
+          "name": "Winter Breeze",
+          "price": 10000,
+          "image": "images/winter-breeze-cocktail.jpg",
+          "soldOut": false,
+          "note": "Gin, Vodka, Lemon Cordial, Raspberry Liqueur"
+        },
+        {
+          "id": "cocktails/mojito",
+          "name": "Mojito",
+          "price": 10000,
+          "image": "images/mojito.jpg",
+          "soldOut": false,
+          "note": "Fresh Mint, Lemon Soda, Lime"
+        },
+        {
+          "id": "cocktails/sex-on-the-beach",
+          "name": "Sex on the Beach",
+          "price": 10000,
+          "image": "images/sex-on-the-beach.jpg",
+          "soldOut": false,
+          "note": "Vodka, Orange, Peach, Strawberry"
+        }
+      ],
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable."
+    },
+    "cognac": {
+      "label": "COGNAC",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "cognac/martel-vssd",
+          "name": "Martel VSSD",
+          "price": 100000,
+          "image": "images/martell-vssd.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "cognac/martel-vs",
+          "name": "Martel VS",
+          "price": 100000,
+          "image": "images/martel-vs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "cognac/martel-blue-swift",
+          "name": "Martel Blue Swift",
+          "price": 160000,
+          "image": "images/martel-blue-swift.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "cognac/hennessy-vs",
+          "name": "Hennessy VS",
+          "price": 120000,
+          "image": "images/hennessy-vs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "cognac/hennessy-vsop",
+          "name": "Hennessy VSOP",
+          "price": 200000,
+          "image": "images/hennessy-vsop.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "cognac/hennessy-xo",
+          "name": "Hennessy XO",
+          "price": 500000,
+          "image": "images/hennessy-xo.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "cognac/dusse-vsop",
+          "name": "Dusse VSOP",
+          "price": 150000,
+          "image": "images/dusse-vsop.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "cognac/meukow-vs",
+          "name": "Meukow VS",
+          "price": 75000,
+          "image": "images/meukow-vs.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable."
+    },
+    "grills": {
+      "label": "BBQ & GRILLS",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "grills/full-grilled-chicken",
+          "name": "Full Grilled Chicken",
+          "price": 30000,
+          "image": "images/grilled-chicken.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "grills/croaker-fish",
+          "name": "Croaker Fish",
+          "price": 30000,
+          "image": "images/croaker-fish.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "grills/catfish",
+          "name": "Catfish",
+          "price": 20000,
+          "image": "images/cat-fish.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Takeout ₦1000"
+    },
+    "ice-cream": {
+      "label": "ICE CREAM",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "ice-cream/cup-ice-cream",
+          "name": "Cup Ice Cream",
+          "price": 5000,
+          "image": "images/cupicecream.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "ice-cream/cone-ice-cream",
+          "name": "Cone Ice Cream",
+          "price": 2500,
+          "image": "images/fruit-perfait.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable."
+    },
+    "milkshakes": {
+      "label": "MILKSHAKES",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "milkshakes/creamy-vanilla",
+          "name": "Creamy Vanilla",
+          "price": 10000,
+          "image": "images/creamy-vanilla.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "milkshakes/strawberry-slush",
+          "name": "Strawberry Slush",
+          "price": 10000,
+          "image": "images/strawberry-slush.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "milkshakes/peanut-butter-delight",
+          "name": "Peanut Butter Delight",
+          "price": 10000,
+          "image": "images/peanut-butter-delight.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "milkshakes/maximus-irish-choco",
+          "name": "Maximus Irish Choco",
+          "price": 10000,
+          "image": "images/maximus-irish-choco.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "milkshakes/iced-coffee-frappuccino",
+          "name": "Iced Coffee Frappuccino",
+          "price": 10000,
+          "image": "images/iced-coffee-frappuccino.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable."
+    },
+    "mocktails": {
+      "label": "MOCKTAILS",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "mocktails/chapman",
+          "name": "Chapman",
+          "price": 7000,
+          "image": "images/chapman.jpg",
+          "soldOut": false,
+          "note": "Alcohol / Non Alcohol"
+        },
+        {
+          "id": "mocktails/tropical-island",
+          "name": "Tropical Island",
+          "price": 8000,
+          "image": "images/tropical-island.jpg",
+          "soldOut": false,
+          "note": "Fresh Cream, Irish Cream, Coconut, Vanilla"
+        },
+        {
+          "id": "mocktails/love-portion",
+          "name": "Love Portion",
+          "price": 8000,
+          "image": "images/love-portion.jpg",
+          "soldOut": false,
+          "note": "Fresh Cream, Irish Cream, Kiwi, Peach, Coconut"
+        },
+        {
+          "id": "mocktails/holy-water",
+          "name": "Holy Water",
+          "price": 8000,
+          "image": "images/holy-water.jpg",
+          "soldOut": false,
+          "note": "Raspberry, Tangerine Sour Mix, Lemonade, Lime"
+        },
+        {
+          "id": "mocktails/cucumber-cooler",
+          "name": "Cucumber Cooler",
+          "price": 8000,
+          "image": "images/cucumber-cooler.jpg",
+          "soldOut": false,
+          "note": "Fresh Cucumber, Lemon Cordial, Lime, Mint Syrup"
+        },
+        {
+          "id": "mocktails/bahama-s-sunrise",
+          "name": "Bahama’s Sunrise",
+          "price": 8000,
+          "image": "images/bahamas-sunrise.jpg",
+          "soldOut": false,
+          "note": "Orange, Pineapple, Peach, Coconut"
+        },
+        {
+          "id": "mocktails/cinderella",
+          "name": "Cinderella",
+          "price": 8000,
+          "image": "images/cinderella.jpg",
+          "soldOut": false,
+          "note": "Strawberry, Orange & Pineapple, Lemon, Mixed Berry"
+        },
+        {
+          "id": "mocktails/ginger-lemonade",
+          "name": "Ginger Lemonade",
+          "price": 10000,
+          "image": "images/ginger-lemonade.jpg",
+          "soldOut": false,
+          "note": "Fresh Ginger, Fresh Lemon, Lime Soda"
+        }
+      ],
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable."
+    },
+    "noodles": {
+      "label": "NOODLES",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "noodles/chicken-noodles",
+          "name": "Chicken Noodles",
+          "price": 8000,
+          "image": "images/noodles-chicken.jpg",
+          "soldOut": false,
+          "note": "shredded-chicken"
+        },
+        {
+          "id": "noodles/max-noodles",
+          "name": "Max Noodles",
+          "price": 12000,
+          "image": "images/noodles-max.jpg",
+          "soldOut": false,
+          "note": "shredded-chicken + 2 wings"
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Takeout ₦1000"
+    },
+    "pasta": {
+      "label": "PASTA",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "pasta/spaghetti-bolognese",
+          "name": "Spaghetti Bolognese",
+          "price": 15000,
+          "image": "images/spaghetti-bolognese.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "pasta/prawn-alfredo",
+          "name": "Prawn Alfredo",
+          "price": 18000,
+          "image": "images/prawn-alfredo.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "pasta/chicken-alfredo",
+          "name": "Chicken Alfredo",
+          "price": 15000,
+          "image": "images/chicken-alfredo.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "pasta/stir-fry-spaghetti",
+          "name": "Stir Fry Spaghetti",
+          "price": 10000,
+          "image": "images/stir-fry-spaghetti.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "pasta/native-pasta",
+          "name": "Native Pasta",
+          "price": 10000,
+          "image": "images/native-pasta.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "pasta/seafood-pasta",
+          "name": "Seafood Pasta",
+          "price": 20000,
+          "image": "images/seafood-pasta.jpg",
+          "soldOut": false,
+          "note": "Calamari, prawns and shrimps"
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Takeout ₦1000"
+    },
+    "platter": {
+      "label": "PLATTER",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "platter/wing-platter",
+          "name": "Wing Platter",
+          "price": 40000,
+          "image": "images/wing-platter.jpg",
+          "soldOut": false,
+          "note": "3 flavours of wings & french fries"
+        },
+        {
+          "id": "platter/small-chops-platter",
+          "name": "Small Chops Platter",
+          "price": 50000,
+          "image": "images/small-chops-platter.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "platter/platter-maximus",
+          "name": "Platter Maximus",
+          "price": 65000,
+          "image": "images/platter-maximus.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Takeout ₦1000"
+    },
+    "rice": {
+      "label": "RICE",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "rice/maximus-special-rice",
+          "name": "Maximus Special Rice",
+          "price": 7000,
+          "image": "images/maximus-special-rice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "rice/native-rice",
+          "name": "Native Rice",
+          "price": 6000,
+          "image": "images/native-rice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "rice/chinese-fried-rice",
+          "name": "Chinese Fried Rice",
+          "price": 6000,
+          "image": "images/chinese-fried-rice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "rice/shrimp-coconut-rice",
+          "name": "Shrimp Coconut Rice",
+          "price": 7000,
+          "image": "images/shrimp-coconut-rice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "rice/jollof-rice",
+          "name": "Jollof Rice",
+          "price": 6000,
+          "image": "images/jollof-rice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "rice/special-fried-rice",
+          "name": "Special Fried Rice",
+          "price": 6000,
+          "image": "images/special-fried-rice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "rice/chicken-curry-rice",
+          "name": "Chicken Curry & Rice",
+          "price": 14000,
+          "image": "images/chicken-curry-rice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "rice/jabalaya-rice",
+          "name": "Jabalaya Rice",
+          "price": 10000,
+          "image": "images/Jabalaya-rice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "rice/turkey-in-curry-and-rice",
+          "name": "Turkey in Curry and Rice",
+          "price": 16000,
+          "image": "images/turkey-curry-rice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "rice/shredded-beef-sauce-rice",
+          "name": "Shredded Beef Sauce & Rice",
+          "price": 12000,
+          "image": "images/shredded-beef-rice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "rice/prawn-in-curry-sauce-rice",
+          "name": "Prawn in Curry Sauce & Rice",
+          "price": 15000,
+          "image": "images/prawn-curry-rice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "rice/concoction-rice",
+          "name": "Concoction Rice",
+          "price": 10000,
+          "image": "images/concoction-rice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "rice/maximus-sauce-rice",
+          "name": "Maximus Sauce & Rice",
+          "price": 20000,
+          "image": "images/maximus-sauce-rice.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Takeout ₦1000"
+    },
+    "salad": {
+      "label": "SALAD",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "salad/chicken-salad",
+          "name": "Chicken Salad",
+          "price": 10000,
+          "image": "images/chicken-salad.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "salad/prawn-salad",
+          "name": "Prawn Salad",
+          "price": 15000,
+          "image": "images/shrimp-salad.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "salad/maximus-salad",
+          "name": "Maximus Salad",
+          "price": 15000,
+          "image": "images/maximus-salad.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "salad/cole-slaw",
+          "name": "Cole Slaw",
+          "price": 3500,
+          "image": "images/cole-slaw.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Takeout ₦1000"
+    },
+    "sandwiches": {
+      "label": "SANDWICHES",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "sandwiches/chicken-sandwiches",
+          "name": "Chicken Sandwiches",
+          "price": 4500,
+          "image": "images/chicken-sandwiches.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "sandwiches/beef-sandwiches",
+          "name": "Beef Sandwiches",
+          "price": 5000,
+          "image": "images/beef-sandwiches.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "sandwiches/vegetable-sandwiches",
+          "name": "Vegetable Sandwiches",
+          "price": 3500,
+          "image": "images/vegetable-sandwiches.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Takeout ₦1000"
+    },
+    "shawarma": {
+      "label": "SHAWARMA",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "shawarma/chicken-shawarma",
+          "name": "Chicken Shawarma",
+          "price": 5500,
+          "image": "images/chicken-shawarma.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "shawarma/beef-shawarma",
+          "name": "Beef Shawarma",
+          "price": 6000,
+          "image": "images/beef-shawarma.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "shawarma/gizzard-shawarma",
+          "name": "Gizzard Shawarma",
+          "price": 6500,
+          "image": "images/gizzard-shawarma.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "shawarma/mixed-grill-chicken-gizzard",
+          "name": "Mixed Grill Chicken & Gizzard",
+          "price": 7000,
+          "image": "images/mixed-grill-chicken-gizzard.jpg",
+          "soldOut": false,
+          "note": "Chicken & gizzard/gizzard & beef"
+        },
+        {
+          "id": "shawarma/mixed-grill-chicken-beef",
+          "name": "Mixed Grill Chicken & Beef",
+          "price": 7000,
+          "image": "images/mixed-grill-chicken-beef.jpg",
+          "soldOut": false,
+          "note": "Chicken & beef"
+        },
+        {
+          "id": "shawarma/mixed-grill-shawarma",
+          "name": "Mixed Grill Shawarma",
+          "price": 8000,
+          "image": "images/mixed-grill-shawarma.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Food",
+      "backHref": "food.html",
+      "trayNote": "Takeout ₦1000"
+    },
+    "shots": {
+      "label": "SHOTS",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "shots/tequila",
+          "name": "Tequila",
+          "price": 3000,
+          "image": "images/tequila-shot.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "shots/whiskey",
+          "name": "Whiskey",
+          "price": 3000,
+          "image": "images/whiskey-shot.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "shots/campari",
+          "name": "Campari",
+          "price": 2500,
+          "image": "images/campari-shot.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "shots/gin",
+          "name": "Gin",
+          "price": 3000,
+          "image": "images/gin-shot.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "shots/jagermeister",
+          "name": "Jagermeister",
+          "price": 3000,
+          "image": "images/jagermeister-shot.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable."
+    },
+    "smoothies": {
+      "label": "SMOOTHIES",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "smoothies/milk-fruity",
+          "name": "Milk Fruity",
+          "price": 8000,
+          "image": "images/milk-fruity.jpg",
+          "soldOut": false,
+          "note": "Combination of assorted fruits & milk"
+        },
+        {
+          "id": "smoothies/banana-strawberry",
+          "name": "Banana Strawberry",
+          "price": 8000,
+          "image": "images/banana-strawberry.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "smoothies/avocado-banana",
+          "name": "Avocado Banana",
+          "price": 8000,
+          "image": "images/avocado-banana.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "smoothies/peanut-banana",
+          "name": "Peanut Banana",
+          "price": 8000,
+          "image": "images/peanut-banana.jpg",
+          "soldOut": false,
+          "note": "Banana, Avocado, Peanut Butter"
+        },
+        {
+          "id": "smoothies/ginger-mix",
+          "name": "Ginger Mix",
+          "price": 7000,
+          "image": "images/ginger-mix.jpg",
+          "soldOut": false,
+          "note": "Banana, Ginger, Pineapple, Avocado"
+        },
+        {
+          "id": "smoothies/fresh-juice",
+          "name": "Fresh Juice",
+          "price": 7000,
+          "image": "images/fresh-juice.jpg",
+          "soldOut": false,
+          "note": "Watermelon, Pineapple, Orange, Cucumber, Carrot"
+        },
+        {
+          "id": "smoothies/fruit-perfait",
+          "name": "Fruit Perfait",
+          "price": 15000,
+          "image": "images/fruit-perfait.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable."
+    },
+    "tequila": {
+      "label": "TEQUILA",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "tequila/sierra",
+          "name": "Sierra",
+          "price": 50000,
+          "image": "images/sierra.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "tequila/olmeca",
+          "name": "Olmeca",
+          "price": 70000,
+          "image": "images/olmeca.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "tequila/casamigos",
+          "name": "Casamigos",
+          "price": 300000,
+          "image": "images/casamigos.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "tequila/casa-maestri-reposado",
+          "name": "Casa Maestri (Reposado)",
+          "price": 250000,
+          "image": "images/casa-maestri-reposado.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "tequila/casa-maestri-a-ejo",
+          "name": "Casa Maestri (Añejo)",
+          "price": 350000,
+          "image": "images/casa-maestri-anejo.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "tequila/buen-amigo",
+          "name": "Buen amigo",
+          "price": 50000,
+          "image": "images/Buen-amigo.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "tequila/clase-azul",
+          "name": "Clase Azul",
+          "price": 500000,
+          "image": "images/azul.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "tequila/don-julio",
+          "name": "Don Julio",
+          "price": 800000,
+          "image": "images/don-julio.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "tequila/don-julio-reposado",
+          "name": "Don Julio Reposado",
+          "price": 300000,
+          "image": "images/don-julio-reposado.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "tequila/818-tequila",
+          "name": "818 Tequila",
+          "price": 200000,
+          "image": "images/818-tequila.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "tequila/agavales",
+          "name": "Agavales",
+          "price": 50000,
+          "image": "images/agavales.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable."
+    },
+    "whiskey": {
+      "label": "WHISKEY",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "whiskey/glenlivet-founder-s-reserve",
+          "name": "Glenlivet Founder’s Reserve",
+          "price": 100000,
+          "image": "images/glenlivet-founders-reserve.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/glenlivet-12yrs",
+          "name": "Glenlivet 12yrs",
+          "price": 125000,
+          "image": "images/glenlivet-12yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/glenlivet-15yrs",
+          "name": "Glenlivet 15yrs",
+          "price": 180000,
+          "image": "images/glenlivet-15yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/glenlivet-18yrs",
+          "name": "Glenlivet 18yrs",
+          "price": 280000,
+          "image": "images/glenlivet-18yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/glenmorangie-triple-cask",
+          "name": "Glenmorangie Triple Cask",
+          "price": 100000,
+          "image": "images/glenmorangie-triple-cask.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/mini-william-lawson",
+          "name": "Mini William Lawson",
+          "price": 15000,
+          "image": "images/mini-william-lawson.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/william-lawson",
+          "name": "William Lawson",
+          "price": 40000,
+          "image": "images/william-lawson.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/jamson-stout",
+          "name": "Jamson-stout",
+          "price": 70000,
+          "image": "images/Jamson-stout.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/jameson-irish-green",
+          "name": "Jameson Irish (Green)",
+          "price": 55000,
+          "image": "images/jameson-irish-green.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/jameson-black-barrel",
+          "name": "Jameson Black Barrel",
+          "price": 80000,
+          "image": "images/jameson-black-barrel.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/jack-daniels-honey",
+          "name": "Jack Daniel's Honey",
+          "price": 55000,
+          "image": "images/jack-daniels-honey.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/ballantine-s",
+          "name": "Ballantine’s",
+          "price": 50000,
+          "image": "images/ballantines.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/grant-12yrs",
+          "name": "Grant 12yrs",
+          "price": 50000,
+          "image": "images/grant-12yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/monkey-shoulder",
+          "name": "Monkey Shoulder",
+          "price": 90000,
+          "image": "images/monkey-shoulder.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/smokey-monkey",
+          "name": "Smokey Monkey",
+          "price": 90000,
+          "image": "images/smokey-monkey.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/lakes-whiskey",
+          "name": "Lakes Whiskey",
+          "price": 120000,
+          "image": "images/lakes-whiskey.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/balvenie-12yrs",
+          "name": "Balvenie 12yrs",
+          "price": 155000,
+          "image": "images/balvenie-12yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/balvenie-14yrs",
+          "name": "Balvenie 14yrs",
+          "price": 250000,
+          "image": "images/balvenie-14yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/balvenie-16yrs",
+          "name": "Balvenie 16yrs",
+          "price": 550000,
+          "image": "images/balvenie-16yrs.jpg",
+          "soldOut": false,
+          "note": "Price to confirm"
+        },
+        {
+          "id": "whiskey/balvenie-21yrs",
+          "name": "Balvenie 21yrs",
+          "price": 1000000,
+          "image": "images/balvenie-21yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/glenfiddich-12yrs",
+          "name": "Glenfiddich 12yrs",
+          "price": 120000,
+          "image": "images/glenfiddich-12yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/glenfiddich-15yrs",
+          "name": "Glenfiddich 15yrs",
+          "price": 180000,
+          "image": "images/glenfiddich-15yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/glenfiddich-18yrs",
+          "name": "Glenfiddich 18yrs",
+          "price": 280000,
+          "image": "images/glenfiddich-18yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/glenfiddich-21yrs",
+          "name": "Glenfiddich 21yrs",
+          "price": 550000,
+          "image": "images/glenfiddich-21yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/glenfiddich-22yrs",
+          "name": "Glenfiddich 22yrs",
+          "price": 800000,
+          "image": "images/glenfiddich-22yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/glenfiddich-23yrs",
+          "name": "Glenfiddich 23yrs",
+          "price": 900000,
+          "image": "images/glenfiddich-23yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/glenfiddich-26yrs",
+          "name": "Glenfiddich 26yrs",
+          "price": 2000000,
+          "image": "images/glenfiddich-26yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/macallan-12yrs",
+          "name": "Macallan 12yrs",
+          "price": 180000,
+          "image": "images/macallan-12yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/macallan-15yrs",
+          "name": "Macallan 15yrs",
+          "price": 350000,
+          "image": "images/macallan-15yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/macallan-rare-cask",
+          "name": "Macallan Rare Cask",
+          "price": 750000,
+          "image": "images/macallan-rare-cask.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/tullamore-dew",
+          "name": "Tullamore Dew",
+          "price": 40000,
+          "image": "images/tullamore-dew.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/chivas-15yrs",
+          "name": "Chivas 15yrs",
+          "price": 120000,
+          "image": "images/chivas-15yrs.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "whiskey/chivas-18yrs",
+          "name": "Chivas 18yrs",
+          "price": 200000,
+          "image": "images/chivas-18yrs.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable."
+    },
+    "wines": {
+      "label": "WINES",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "wines/bamoc",
+          "name": "Bamoc",
+          "price": 8000,
+          "image": "images/bamoc.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/four-cousins",
+          "name": "Four Cousins",
+          "price": 20000,
+          "image": "images/four-cousins.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/silk-spice",
+          "name": "Silk & Spice",
+          "price": 50000,
+          "image": "images/Silk-Spice.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/sweet-kiss",
+          "name": "Sweet kiss",
+          "price": 20000,
+          "image": "images/sweet-kiss.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/agor",
+          "name": "Agor",
+          "price": 30000,
+          "image": "images/agor.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/lamothe-parrot",
+          "name": "Lamothe Parrot",
+          "price": 30000,
+          "image": "images/lamothe-parrot.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/drotsy",
+          "name": "Drotsy",
+          "price": 20000,
+          "image": "images/drosty.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/nederburg",
+          "name": "Nederburg",
+          "price": 50000,
+          "image": "images/nederburg.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/escudo-rojo",
+          "name": "Escudo Rojo",
+          "price": 50000,
+          "image": "images/escudo-rojo.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/belena-moscato",
+          "name": "Belena Moscato",
+          "price": 50000,
+          "image": "images/belena-moscato.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/belena-shiraz",
+          "name": "Belena Shiraz",
+          "price": 55000,
+          "image": "images/belena-shiraz.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/taylor-black",
+          "name": "Taylor Black",
+          "price": 40000,
+          "image": "images/taylor-black.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/martinellis",
+          "name": "Martinelli's",
+          "price": 25000,
+          "image": "images/matwin.jpeg",
+          "soldOut": false,
+          "note": "Non alcoholic wine"
+        },
+        {
+          "id": "wines/chamdor",
+          "name": "Chamdor",
+          "price": 25000,
+          "image": "images/chamdor.jpg",
+          "soldOut": false,
+          "note": "Non alcoholic wine"
+        }
+      ],
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable."
+    },
+    "liquor-rum-gin": {
+      "label": "Liquor, Rum & Gin",
+      "layout": "grid",
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable.",
+      "items": [
+        {
+          "id": "liquor-rum-gin/jaegermeister",
+          "name": "Jaegermeister",
+          "price": 35000,
+          "image": "images/jaegermeister.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "liquor-rum-gin/bumbu-original",
+          "name": "Bumbu Original",
+          "price": 100000,
+          "image": "images/bumbu-original.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "liquor-rum-gin/cape-velvet",
+          "name": "Cape velvet",
+          "price": 50000,
+          "image": "images/cape-velvet.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "liquor-rum-gin/campari",
+          "name": "Campari",
+          "price": 12000,
+          "image": "images/campari.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "liquor-rum-gin/hendricks",
+          "name": "Hendricks",
+          "price": 100000,
+          "image": "images/hendricks.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "liquor-rum-gin/bombay-sapphire",
+          "name": "Bombay Sapphire",
+          "price": 50000,
+          "image": "images/bombay-sapphire.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ]
+    }
+  },
+  "featured": [
+    "bites/prawn-suya",
+    "burger/double-patties-burger",
+    "platter/platter-maximus",
+    "grills/full-grilled-chicken"
+  ]
+}

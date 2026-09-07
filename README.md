@@ -43,6 +43,19 @@ A simple, static website for a bar & restaurant menu. Built with plain HTML and 
 4. Select the `main` branch and the root directory, then save.
 5. Your site will appear at `https://<your-username>.github.io/Maximus/`.
 
+## Admin backend (price editing / sold-out)
+
+Menu items live in Redis (`menu:v1` key) and are rendered client-side by `menu-render.js` on every menu page; the owner edits them at `/admin.html` (also linked quietly from the Contact page footer), gated by a single passcode.
+
+One-time setup for a new deployment:
+
+1. In the Vercel dashboard: Project → Integrations → add the **Upstash (Redis)** Marketplace integration.
+2. Copy `.env.example` to `.env.local`. Generate `ADMIN_PASSCODE_HASH` and `SESSION_SECRET` using the one-liners documented in that file, and pick the real passcode (shared with the owner separately -- never commit it).
+3. Add `ADMIN_PASSCODE_HASH` and `SESSION_SECRET` as env vars in the Vercel dashboard (Production + Preview); the Redis vars are added automatically by the integration in step 1.
+4. `vercel link`, then `vercel env pull .env.local` to pull the Redis vars down locally.
+5. `npm install`, then `npm run seed` -- loads `menu-seed.json` (the original menu, extracted once from the old hardcoded HTML) into Redis. Re-running this later resets the menu back to that baseline, undoing any admin edits, so only re-run it deliberately.
+6. `vercel dev` to test locally, then push and verify on a Preview deployment before promoting to production.
+
 ## Troubleshooting
 
 * If an image doesn’t show, confirm the filename and that it’s inside `images/`.
