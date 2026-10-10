@@ -264,14 +264,6 @@
           "image": "images/goat-meat.jpg",
           "soldOut": false,
           "note": null
-        },
-        {
-          "id": "bites/prawn-suya",
-          "name": "Prawn Suya",
-          "price": 15000,
-          "image": "images/prawn-suya.jpg",
-          "soldOut": false,
-          "note": null
         }
       ],
       "backLabel": "Food",
@@ -627,6 +619,14 @@
           "name": "Catfish",
           "price": 20000,
           "image": "images/cat-fish.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "grills/prawn-suya",
+          "name": "Prawn Suya",
+          "price": 20000,
+          "image": "images/prawn-suya.jpg",
           "soldOut": false,
           "note": null
         }
@@ -1805,7 +1805,7 @@
     }
   },
   "featured": [
-    "bites/prawn-suya",
+    "grills/prawn-suya",
     "burger/double-patties-burger",
     "platter/platter-maximus",
     "grills/full-grilled-chicken"
