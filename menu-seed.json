@@ -1740,6 +1740,22 @@
           "image": "images/chamdor.jpg",
           "soldOut": false,
           "note": "Non alcoholic wine"
+        },
+        {
+          "id": "wines/cloud-bay",
+          "name": "Cloud Bay",
+          "price": 150000,
+          "image": "images/cloud-bay.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/carlo-rossi",
+          "name": "Carlo Rossi",
+          "price": 30000,
+          "image": "images/carlo-rossi.jpg",
+          "soldOut": false,
+          "note": null
         }
       ],
       "backLabel": "Drinks",
