@@ -324,14 +324,6 @@
           "note": null
         },
         {
-          "id": "champagne/belaire-fant-me-lux",
-          "name": "Belaire Fantôme lux",
-          "price": 110000,
-          "image": "images/belaire-fantome.jpg",
-          "soldOut": false,
-          "note": null
-        },
-        {
           "id": "champagne/veuve-rich",
           "name": "Veuve rich",
           "price": 250000,
@@ -525,14 +517,6 @@
       "label": "COGNAC",
       "layout": "grid",
       "items": [
-        {
-          "id": "cognac/martel-vssd",
-          "name": "Martel VSSD",
-          "price": 100000,
-          "image": "images/martell-vssd.jpg",
-          "soldOut": false,
-          "note": null
-        },
         {
           "id": "cognac/martel-vs",
           "name": "Martel VS",
@@ -1754,6 +1738,14 @@
           "name": "Carlo Rossi",
           "price": 30000,
           "image": "images/carlo-rossi.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "wines/martini",
+          "name": "Martini",
+          "price": 80000,
+          "image": "images/martini.jpg",
           "soldOut": false,
           "note": null
         }
