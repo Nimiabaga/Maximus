@@ -1740,14 +1740,6 @@
           "image": "images/carlo-rossi.jpg",
           "soldOut": false,
           "note": null
-        },
-        {
-          "id": "wines/martini",
-          "name": "Martini",
-          "price": 80000,
-          "image": "images/martini.jpg",
-          "soldOut": false,
-          "note": null
         }
       ],
       "backLabel": "Drinks",
@@ -1806,6 +1798,14 @@
           "name": "Bombay Sapphire",
           "price": 50000,
           "image": "images/bombay-sapphire.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "liquor-rum-gin/martini",
+          "name": "Martini",
+          "price": 80000,
+          "image": "images/martini.jpg",
           "soldOut": false,
           "note": null
         }
