@@ -1753,7 +1753,7 @@
           "id": "wines/eisberg",
           "name": "Eisberg",
           "price": 50000,
-          "image": "",
+          "image": "images/eisberg.jpg",
           "soldOut": false,
           "note": null
         }
