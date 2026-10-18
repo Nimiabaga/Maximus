@@ -327,7 +327,7 @@
           "id": "champagne/martini",
           "name": "Martini",
           "price": 80000,
-          "image": "images/martini.jpg",
+          "image": "images/martini.png",
           "soldOut": false,
           "note": null
         },
