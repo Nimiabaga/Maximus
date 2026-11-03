@@ -701,6 +701,31 @@
       "backHref": "drinks.html",
       "trayNote": "Images are illustrative. Prices include VAT where applicable."
     },
+    "tea": {
+      "label": "TEA",
+      "layout": "grid",
+      "items": [
+        {
+          "id": "tea/arabian-tea",
+          "name": "Arabian Tea",
+          "price": 10000,
+          "image": "images/arabian-tea.jpg",
+          "soldOut": false,
+          "note": null
+        },
+        {
+          "id": "tea/sultan",
+          "name": "Sultan",
+          "price": 10000,
+          "image": "images/sultan.jpg",
+          "soldOut": false,
+          "note": null
+        }
+      ],
+      "backLabel": "Drinks",
+      "backHref": "drinks.html",
+      "trayNote": "Images are illustrative. Prices include VAT where applicable."
+    },
     "mocktails": {
       "label": "MOCKTAILS",
       "layout": "grid",
